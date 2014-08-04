@@ -1,7 +1,7 @@
 {
   "name": "react-autoupdate-time",
   "description": "Renders a <time> element that autoupdates at a configurable interval",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "bugs": {
     "url": "https://github.com/KyleAMathews/react-autoupdate-time/issues"
