@@ -9,12 +9,11 @@ module.exports = React.createClass
   ticket: null
 
   getDefaultProps: ->
-    autoUpdate: false
+    autoUpdate: true
 
   componentDidMount: ->
-    if @props.autoUpdate
-      delay = if isNumber(@props.autoUpdate) then @props.autoUpdate * 1000 else 3000
-      @ticker = setInterval(@invalidate, delay)
+    delay = if isNumber(@props.autoUpdate) then @props.autoUpdate * 1000 else 3000
+    @ticker = setInterval(@invalidate, delay)
 
    componentWillUnmount: ->
      if @ticker then clearInterval(@ticker)

@@ -14,15 +14,13 @@ module.exports = React.createClass({
   ticket: null,
   getDefaultProps: function() {
     return {
-      autoUpdate: false
+      autoUpdate: true
     };
   },
   componentDidMount: function() {
     var delay;
-    if (this.props.autoUpdate) {
-      delay = isNumber(this.props.autoUpdate) ? this.props.autoUpdate * 1000 : 3000;
-      return this.ticker = setInterval(this.invalidate, delay);
-    }
+    delay = isNumber(this.props.autoUpdate) ? this.props.autoUpdate * 1000 : 3000;
+    return this.ticker = setInterval(this.invalidate, delay);
   },
   componentWillUnmount: function() {
     if (this.ticker) {
