@@ -16,9 +16,6 @@ publish:
 	git push --tags origin HEAD:master
 	npm publish
 
-build:
-	@$(BIN)/cjsx -cb -o dist src/index.cjsx
-
 define release
 	@$(BIN)/cjsx -cb -o dist src/index.cjsx
 	npm version $(1)
