@@ -21,7 +21,7 @@ module.exports = React.createClass
 
   render: ->
     @transferPropsTo(
-      <Time />
+      <Time relative />
     )
 
   invalidate: ->

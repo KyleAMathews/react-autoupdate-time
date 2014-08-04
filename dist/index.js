@@ -30,7 +30,9 @@ module.exports = React.createClass({
     }
   },
   render: function() {
-    return this.transferPropsTo(Time(null));
+    return this.transferPropsTo(Time({
+      "relative": true
+    }));
   },
   invalidate: function() {
     return this.forceUpdate();
