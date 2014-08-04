@@ -1,0 +1,31 @@
+{
+  "name": "react-autoupdate-time",
+  "description": "Renders a <time> element that autoupdates at a configurable interval",
+  "version": "0.0.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/KyleAMathews/react-autoupdate-time/issues"
+  },
+  "dependencies": {
+    "react-time": "^0.8.1"
+  },
+  "devDependencies": {
+    "coffee-react": "^0.5.0"
+  },
+  "homepage": "https://github.com/KyleAMathews/react-autoupdate-time",
+  "keywords": [
+    "react",
+    "react-component",
+    "timeago",
+    "moment"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "peerDependencies": {
+    "react": ">=0.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KyleAMathews/react-autoupdate-time.git"
+  }
+}
