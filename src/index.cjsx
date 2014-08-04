@@ -10,10 +10,10 @@ module.exports = React.createClass
 
   getDefaultProps: ->
     autoUpdate: true
+    interval: 3000
 
   componentDidMount: ->
-    delay = if isNumber(@props.autoUpdate) then @props.autoUpdate * 1000 else 3000
-    @ticker = setInterval(@invalidate, delay)
+    @ticker = setInterval(@invalidate, @props.interval)
 
    componentWillUnmount: ->
      if @ticker then clearInterval(@ticker)
