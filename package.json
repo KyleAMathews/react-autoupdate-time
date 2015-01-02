@@ -23,7 +23,7 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "peerDependencies": {
-    "react": ">=0.11.0"
+    "react": ">=0.12.0"
   },
   "repository": {
     "type": "git",
