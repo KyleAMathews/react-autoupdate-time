@@ -6,7 +6,6 @@ isNumber = (value) ->
 
 module.exports = React.createClass
   displayName: 'AutoupdateTime'
-  ticket: null
 
   getDefaultProps: ->
     autoUpdate: true
@@ -19,9 +18,7 @@ module.exports = React.createClass
      if @ticker then clearInterval(@ticker)
 
   render: ->
-    @transferPropsTo(
-      <Time relative />
-    )
+    <Time relative {...@props} />
 
   invalidate: ->
     @forceUpdate()
