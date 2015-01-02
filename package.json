@@ -7,7 +7,7 @@
     "url": "https://github.com/KyleAMathews/react-autoupdate-time/issues"
   },
   "dependencies": {
-    "react-time": "^2.1.1"
+    "react-time-temp-fork": "^2.1.1"
   },
   "devDependencies": {
     "coffee-react": "^2.1.2"
