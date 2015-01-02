@@ -1,4 +1,4 @@
-Time = require 'react-time'
+Time = require 'react-time-temp-fork'
 React = require 'react'
 
 isNumber = (value) ->
