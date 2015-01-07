@@ -1,8 +1,5 @@
-Time = require 'react-time-temp-fork'
+Time = require 'react-time'
 React = require 'react'
-
-isNumber = (value) ->
-  toString.call(value) is '[object Number]'
 
 module.exports = React.createClass
   displayName: 'AutoupdateTime'
